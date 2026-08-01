@@ -1,5 +1,3 @@
-Here's a full README based on everything we built:
-
 ```markdown
 # Olympic Games History Analysis
 
@@ -49,26 +47,28 @@ Two files were used:
 ## How to Run
 
 1. Clone the repository
-```
 
+```bash
 git clone https://github.com/ADAM11X/olympic-games-analysis.git
 cd olympic-games-analysis
-
 ```
 
 2. Create and activate a virtual environment
-```
 
+```bash
 python -m venv venv
-source venv/bin/activate.fish # fish shell
 
+# On Linux/Mac:
+source venv/bin/activate
+
+# On Windows:
+venv\Scripts\activate
 ```
 
 3. Install dependencies
-```
 
+```bash
 pip install -r requirements.txt
-
 ```
 
 4. Download the dataset from Kaggle and place `athlete_events.csv` and `noc_regions.csv` into `data/raw/`
@@ -78,25 +78,20 @@ pip install -r requirements.txt
 ## Project Structure
 
 ```
-
 olympic-games-analysis/
 ├── data/
-│ ├── raw/ # original CSVs (not tracked in git)
-│ └── processed/ # cleaned, merged data (not tracked in git)
-├── images/ # exported charts
+│   ├── raw/           # original CSVs (not tracked in git)
+│   └── processed/     # cleaned, merged data (not tracked in git)
+├── images/            # exported charts
 ├── notebooks/
-│ └── olympic_analysis.ipynb
+│   └── olympic_analysis.ipynb
 ├── .gitignore
 ├── README.md
 └── requirements.txt
-
 ```
 
 ## Tools Used
 
 Python, pandas, matplotlib, Jupyter Notebook
 
----
 
-*Part of a self-directed data engineering learning path. See [Project #1: World Population Growth Analysis](https://github.com/ADAM11X/world-population-growth-analysis) for the previous project in this series.*
-```
