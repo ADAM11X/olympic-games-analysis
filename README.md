@@ -86,7 +86,6 @@ olympic-games-analysis/
 ├── images/ # exported charts
 ├── notebooks/
 │ └── olympic_analysis.ipynb
-├── src/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
